@@ -16,7 +16,9 @@ computador.
 ## Qué necesitas
 
 - **Claude Code** (la app de escritorio de Claude, pestaña Code, o la terminal).
-- Un Mac (está probada en Mac): `brew install ffmpeg whisper-cpp node`. Google Chrome instalado.
+- Mac o Windows. Lo necesario (ffmpeg, whisper-cpp y Node) te lo instala el mismo Claude con el texto de abajo.
+  A mano: en Mac `brew install ffmpeg whisper-cpp node`; en Windows `winget install Gyan.FFmpeg OpenJS.NodeJS`
+  y whisper.cpp desde sus [releases](https://github.com/ggml-org/whisper.cpp/releases). Google Chrome instalado.
 - Tu video ya cortado (sin silencios ni tomas malas), vertical.
 
 ## Instalación (la forma fácil)

@@ -13,9 +13,11 @@ La plantilla está en `plantilla/` (Remotion). Todo lo que pasa en pantalla se d
 
 ## Requisitos (revísalos antes de empezar)
 
-- `ffmpeg` y `whisper-cli` (whisper.cpp): `brew install ffmpeg whisper-cpp`
-- Node 18 o más nuevo, y Google Chrome instalado.
-- Si falta algo, dile a la persona qué instalar y espera. No sigas a medias.
+- `ffmpeg` y `whisper-cli` (whisper.cpp). Mac: `brew install ffmpeg whisper-cpp`. Windows: `winget install Gyan.FFmpeg`
+  y el zip de whisper.cpp de https://github.com/ggml-org/whisper.cpp/releases (deja `whisper-cli.exe` en el PATH).
+- Node 18 o más nuevo (Windows: `winget install OpenJS.NodeJS`), y Google Chrome instalado.
+- Si falta algo, instálalo tú con permiso de la persona; si el instalador pide su clave, que la escriba ella. No sigas a medias.
+- En Windows los scripts `.sh` corren en Git Bash (Claude Code en Windows lo usa). Si `bash` no está, usa sus comandos equivalentes.
 
 ## Pasos
 
@@ -103,7 +105,8 @@ tapada (salvo la lista y los pantallazos, que oscurecen el fondo a propósito), 
 cortan, el gancho se lee en el cuadro 0.
 
 Si el render se queda pegado en "Waiting for root component to load", usa el Chrome del sistema:
-`--browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"`.
+`--browser-executable="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"` (Mac) o
+`--browser-executable="C:\Program Files\Google\Chrome\Application\chrome.exe"` (Windows).
 
 ### 6. Render y revisión final
 
