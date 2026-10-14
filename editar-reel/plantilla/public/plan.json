@@ -1,0 +1,30 @@
+{
+  "video": "video.mp4",
+  "duracion_s": 28.3,
+  "cortes_s": [2.2, 5.03, 9.43, 11.6, 15.87, 17.9, 22.87, 26.53],
+  "zooms": [1.0, 1.0, 1.16, 1.26, 1.1, 1.0, 1.16, 1.1, 1.0],
+  "cara_y": 800,
+  "colores": { "acento": "#0051FF", "resalte": "#9FC5FF" },
+  "gancho": { "linea": "Lo hizo mi IA", "sub": "y yo no edité nada", "hasta_s": 2.2 },
+  "split": [
+    { "video": "otro-video.mp4", "broll_desde_s": 0, "recorte_y": 580, "desde_s": 0, "hasta_s": 2.2 }
+  ],
+  "titulos": [
+    { "kicker": "CLASE DE IA · 30 S", "texto": "Así lo *hice*", "desde_s": 2.35, "hasta_s": 5.03 },
+    { "kicker": "EL SECRETO", "texto": "Las *skills*", "desde_s": 9.55, "hasta_s": 11.6 }
+  ],
+  "chat": [
+    { "app": "Claude Code", "mensaje": "Investiga qué pasó y hazme un video explicándolo", "respuesta": "Leyendo noticias…", "desde_s": 5.25, "hasta_s": 9.43 }
+  ],
+  "lista": [
+    { "titulo": "~/.claude/skills", "desde_s": 11.65, "hasta_s": 14.6, "filas": [
+      { "nombre": "investigar-noticia", "nota": "investiga", "marcar_s": 13.15 },
+      { "nombre": "editar-reel", "nota": "edita", "marcar_s": 13.94 },
+      { "nombre": "sonido-reel", "nota": "música y sonido" }
+    ] }
+  ],
+  "pantallazos": [
+    { "imagenes": ["captura-1.jpg", "captura-2.jpg", "captura-3.jpg"], "desde_s": 14.6, "hasta_s": 15.87 }
+  ],
+  "cierre": { "usuario": "@tu.cuenta", "desde_s": 26.6 }
+}

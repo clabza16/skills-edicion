@@ -1,0 +1,12 @@
+node_modules/
+out/
+__pycache__/
+.DS_Store
+*.bin
+editar-reel/plantilla/public/*.mp4
+sonido-reel/assets/music/*
+sonido-reel/assets/sfx/*
+!sonido-reel/assets/music/.gitkeep
+!sonido-reel/assets/sfx/.gitkeep
+editar-reel/plantilla/public/*.jpg
+editar-reel/plantilla/public/*.png
