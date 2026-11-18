@@ -1,7 +1,8 @@
 # skills-edicion
 
-Tres skills para que Claude edite tus reels por ti: **investiga** el tema, **edita** el video
-(zooms, subtítulos, títulos, efectos tipo motion, pantallazos) y le pone **el sonido**.
+Cuatro skills para que Claude edite tus reels por ti: **investiga** el tema, **edita** el video
+(zooms, subtítulos, títulos, efectos tipo motion, pantallazos), le pone **el sonido** y saca
+**6 versiones con ganchos distintos** para probarlas como reels de prueba.
 
 Son las que uso para mis videos en Instagram ([@calbornoz.ia](https://www.instagram.com/calbornoz.ia/)),
 adaptadas para que funcionen con las tuyas: sin mi marca, sin mis llaves, sin nada pegado a mi
@@ -11,6 +12,7 @@ computador.
 |---|---|
 | [`editar-reel`](editar-reel/SKILL.md) | Toma tu video vertical hablando a cámara y le agrega zoom en cada corte, un gancho que se lee desde el primer segundo, títulos, subtítulos karaoke, un chat que se escribe solo, una lista tipo Finder, capturas en abanico, pantalla dividida con otro video y un botón de seguir. Con Remotion. |
 | [`sonido-reel`](sonido-reel/SKILL.md) | Música sin copyright que baja sola cuando hablas, efectos en los momentos justos y el volumen al estándar de Instagram (-14 LUFS, 48 kHz). |
+| [`trial-reels`](trial-reels/SKILL.md) | Un video, seis ganchos: saca 6 versiones del reel editado, cada una con un texto distinto en los primeros segundos (que también es la portada), para subirlas como reels de prueba y ver cuál gana. Con ffmpeg. |
 | [`investigar-noticia`](investigar-noticia/SKILL.md) | Antes de explicar algo en video: lee varias fuentes y arma una ficha con cada dato y su fuente, para no publicar nada falso. |
 
 ## Qué necesitas
@@ -26,13 +28,13 @@ computador.
 Pégale esto a Claude Code:
 
 > Instala las skills de https://github.com/clabza16/skills-edicion en ~/.claude/skills (una
-> carpeta por skill: editar-reel, sonido-reel e investigar-noticia) y revisa que tenga ffmpeg,
+> carpeta por skill: editar-reel, sonido-reel, trial-reels e investigar-noticia) y revisa que tenga ffmpeg,
 > whisper-cpp y node instalados. Si falta algo, instálalo.
 
 Después, para usarlas:
 
-> Edita el video ~/Downloads/mi-video.mp4 con la skill editar-reel y después ponle sonido con
-> sonido-reel.
+> Edita el video ~/Downloads/mi-video.mp4 con la skill editar-reel, ponle sonido con
+> sonido-reel y sácale 6 versiones con trial-reels.
 
 Claude transcribe tu video, te pregunta lo que no sabe (por ejemplo, el mensaje exacto que le
 escribiste a la IA), arma la edición, revisa los cuadros y te entrega el MP4.
@@ -42,7 +44,7 @@ escribiste a la IA), arma la edición, revisa los cuadros y te entrega el MP4.
 ```bash
 git clone https://github.com/clabza16/skills-edicion /tmp/skills-edicion
 mkdir -p ~/.claude/skills
-cp -R /tmp/skills-edicion/{editar-reel,sonido-reel,investigar-noticia} ~/.claude/skills/
+cp -R /tmp/skills-edicion/{editar-reel,sonido-reel,trial-reels,investigar-noticia} ~/.claude/skills/
 ```
 
 ## Lo que no trae
