@@ -11,7 +11,8 @@ El motor es `scripts/variantes.py` (ffmpeg, segundos por versión).
 
 ## Pasos
 
-1. **Parte del video SIN gancho escrito** (si ya trae uno, el nuevo se le monta encima). **Mira el video y
+1. **Parte del video SIN gancho escrito** (si ya trae uno, el nuevo se le monta encima). Si lo editaste con
+   `editar-reel`, borra `gancho` de su `plan.json` y renderiza de nuevo: ese es el video base. **Mira el video y
    escucha la primera frase.** El gancho escrito NO repite lo que se dice: si lo
    repite, es un subtítulo. Tiene que sumar una razón para quedarse.
 2. **Escribe 6 ganchos de 6 palabras o menos, uno de cada tipo:**
@@ -27,8 +28,9 @@ El motor es `scripts/variantes.py` (ffmpeg, segundos por versión).
    ```bash
    python3 <esta-skill>/scripts/variantes.py --video reel.mp4 --ganchos ganchos.txt --out variantes/
    ```
-   Opcional: `--seg 4` (cuántos segundos dura el gancho, 5 por defecto), `--y 420` (altura del
-   texto) y `--fuente ruta.ttf`.
+   (En Windows: `python` o `py` en vez de `python3`.) Opcional: `--seg 4` (cuántos segundos dura el
+   gancho, 5 por defecto), `--y 0.3` (altura del texto, 0 = arriba, 1 = abajo; 0.22 por defecto) y
+   `--fuente ruta.ttf`. Necesita Python 3, ffmpeg y Pillow (`pip install pillow`).
 4. **Revisa el primer cuadro de cada una** (`variantes/variante_N_portada.png`): que el texto se lea
    entero y no tape la cara. Si tapa, cambia `--y`.
 5. **Súbelas como reels de prueba** (al compartir el reel en Instagram, activa la opción de reel de

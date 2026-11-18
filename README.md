@@ -22,6 +22,7 @@ computador.
   A mano: en Mac `brew install ffmpeg whisper-cpp node`; en Windows `winget install Gyan.FFmpeg OpenJS.NodeJS`
   y whisper.cpp desde sus [releases](https://github.com/ggml-org/whisper.cpp/releases). Google Chrome instalado.
 - Tu video ya cortado (sin silencios ni tomas malas), vertical.
+- Para `trial-reels`: Python 3 y Pillow (`pip install pillow`). En Windows el comando es `python` o `py`.
 
 ## Instalación (la forma fácil)
 
@@ -34,7 +35,7 @@ Pégale esto a Claude Code:
 Después, para usarlas:
 
 > Edita el video ~/Downloads/mi-video.mp4 con la skill editar-reel, ponle sonido con
-> sonido-reel y sácale 6 versiones con trial-reels.
+> sonido-reel y sácale 6 versiones con trial-reels (sin el gancho de editar-reel, que lo pone trial-reels).
 
 Claude transcribe tu video, te pregunta lo que no sabe (por ejemplo, el mensaje exacto que le
 escribiste a la IA), arma la edición, revisa los cuadros y te entrega el MP4.
